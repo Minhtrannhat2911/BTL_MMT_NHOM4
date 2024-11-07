@@ -1,0 +1,18 @@
+�m kiếm món ăn
+
+GET http://localhost:3000/menu?keyword=banhbao
+
+### Get dishes by category
+
+GET http://localhost:3000/menu/main-course?keyword=pizza
+
+### Get a dish information by slug
+
+GET http://localhost:3000/menu/detail/banhbao### create tables
+POST http://localhost:3000/admin/table/create
+
+Content-Type: application/json
+{
+    "numberofSeats": "4"
+}
+

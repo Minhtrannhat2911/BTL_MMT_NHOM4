@@ -1,0 +1,120 @@
+.profile-form {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: flex-start;
+}
+.profile-box {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.left-aligned {
+    height: 10px;
+    text-align: left;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+hr.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0px; /* Adjust the margin as needed */
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+        /* margin-bottom: 15px; */
+
+}
+
+.form-group-tripple {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 80px; /* Space between columns */
+    margin: 30px auto; /* Center the group horizontally */
+    width: 90%;
+}
+
+.form-group-double {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust to create three columns */
+    gap: 20px; /* Space between the inputs */
+    margin: 0px 0;
+    
+    width: 100%; /* Ensure it spans the full width */
+}
+label {
+    margin-right: 10px; /* Add space between label and input */
+    font-weight: 500;
+    min-width: 120px; /* Ensure labels have a consistent width */
+    text-align: left; /* Align text to the left */
+}
+
+input:placeholder-shown, select.placeholder-shown {
+    background-color: #97b5ec5d;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    flex: 1; /* Allow input to take available space */
+    color: black; /* Change this to your desired text color */
+    background-color: #97b5ec5d;
+    flex: 0 1 30%; /* Adjust the flex basis to fit multiple inputs side by side */
+    font-weight: normal; /* Ensure text is not bold */
+    margin-left: 5px; /* Apply the background color directly */
+}
+
+input::placeholder {
+    color:#888; /* Change the color as needed */
+    opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+
+.submit-button {
+    padding: 10px 40px;
+    width: 25%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+.info-text {
+    font-weight: normal; /* Ensures text is not bold */
+}
+
+select.placeholder-shown {
+    color: #888; /* Lighter color for the placeholder */
+  }
+  
+  select:not(.placeholder-shown) {
+    color: black; /* Darker color for selected options */
+  }

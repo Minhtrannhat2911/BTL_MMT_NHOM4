@@ -1,0 +1,70 @@
+### Get All Users
+GET http://localhost:3000/users/list
+
+### Get User
+GET http://localhost:3000/users/detail/670568ed3fceba943d0c0c8f
+
+examples: http://localhost:3000/users/:id
+
+
+### Register User
+
+POST http://localhost:3000/users/register
+
+Content-Type: application/json
+
+{
+      "fullname": "abc",
+      "email": "abc@gmail.com",
+      "phone" : "1234567890",
+      "password": "123",
+      "address" : "Thủ Đức TPHCM"
+}
+
+### Login
+POST http://localhost:3000/users/login
+
+# Content-Type: application/json
+
+{
+      "email": "hoang@gmail.com",
+      "password": "123"
+}
+
+### Logout
+GET http://localhost:3000/users/logout
+
+### Edit User
+
+PATCH http://localhost:3000/users/edit/670568ed3fceba943d0c0c8f
+
+examples : http://localhost:3000/users/edit/:id
+
+Content-Type: application/json
+
+{
+      "address" : "Quận 12"
+}
+
+
+### Request OTP
+POST http://localhost:3000/users/request_Otp
+
+Content-Type: application/json
+
+{
+      "email": "abc@gmail.com"
+}
+
+
+
+### Verify OTP and change password
+POST http://localhost:3000/users/verify_Otp 
+
+Content-Type: application/json
+
+{
+    "email": "abc@gmail.com",
+    "otp": "123456",
+    "newPassword" : "dfg"
+}

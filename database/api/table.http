@@ -1,0 +1,8 @@
+### create tables
+POST http://localhost:3000/admin/table/create
+
+Content-Type: application/json
+{
+    "numberofSeats": "4"
+}
+

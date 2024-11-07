@@ -1,0 +1,44 @@
+### Add a new dish
+POST http://localhost:3000/admin/dish/create
+
+Content-Type: application/json
+{
+    "name": "Grilled Chicken Sandwich",
+    "description": "A tasty sandwich with grilled chicken, lettuce, tomato, and mayo on a toasted bun.",
+    "price": 10.99,
+    "category": "Main Course",
+    "imageUrl": "https://example.com/images/grilled-chicken-sandwich.jpg",
+    "like": 150
+}
+
+
+### Get all dishes 
+GET http://localhost:3000/admin/dish/list
+
+### Get dish information by slug
+route: http://localhost:3000/admin/dish/detail/:slugDish
+
+GET http://localhost:3000/admin/dish/detail/spaghetti-carbonara
+
+### Edit dish information by slug
+
+route: http://localhost:3000/admin/dish/edit/:slugDish
+
+PATCH http://localhost:3000/admin/dish/edit/grilled-chicken-sandwich
+
+Content-Type: application/json
+
+{
+    "name": "Grilled Chicken Sandwich",
+    "description": "A tasty sandwich with grilled chicken, lettuce, tomato, and mayo on a toasted bun.",
+    "price": 15,
+    "category": "Main Course",
+    "imageUrl": "https://example.com/images/grilled-chicken-sandwich.jpg",
+    "like": 200
+}
+
+### Delete a dish by setting deleted to true
+
+DELETE http://localhost:3000/admin/dish/delete/grilled-chicken-sandwich
+
+Content-Type: application/json

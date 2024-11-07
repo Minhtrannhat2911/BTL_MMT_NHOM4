@@ -1,0 +1,151 @@
+/* Top Navigation Container */
+.top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+/* Settings Icon */
+.setting-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.setting-button button {
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    border-radius: 100%; /* Make the button a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove default border */
+    background-color: none; /* Set background color */
+    cursor: pointer;
+    padding: 0; /* Remove default padding */
+}
+
+.setting-icon {
+    font-size: 20px;
+    color: #000;
+}
+
+/* Log icon*/
+
+.log-button{
+    position: relative;
+    display: flex-end;
+    align-items: center;
+    margin-left: 90%;
+    cursor: pointer    
+}
+
+.log-button button {
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    border-radius: 100%; /* Make the button a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove default border */
+    background-color: none; /* Set background color */
+    cursor: pointer;
+    padding: 0; /* Remove default padding */
+}
+
+.log-icon {
+    font-size: 20px;
+    color: #000;
+}
+
+/* Log Container */
+.log-container {
+    position: absolute;
+    top: 60px; /* Điều chỉnh vị trí theo nhu cầu của bạn */
+    right: 0;
+    width: 800px; /* Điều chỉnh kích thước theo nhu cầu của bạn */
+    height:800px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 20px;
+}
+
+
+/* User Profile Container */
+.user-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.user-profile button {
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    border-radius: 50%; /* Make the button a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove default border */
+    background-color: #f0f0f0; /* Set background color */
+    cursor: pointer;
+    padding: 0; /* Remove default padding */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 49px; /* Adjust based on your layout */
+    right: 0;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px; /* Optional: to give the dropdown itself rounded corners */
+}
+
+.dropdown-menu button {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px; /* Ensure the button has no rounded corners */
+}
+
+.dropdown-menu button:hover {
+    background-color: #24baf5;
+    color: #ffffff; /* Change text color to white on hover */
+}
+
+/* Online Status Indicator */
+.status-indicator {
+    position: absolute;
+    margin-bottom: 9px;
+    margin-right: -7px;
+    bottom: 20px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50; /* Green color for online */
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}

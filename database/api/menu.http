@@ -1,0 +1,19 @@
+### Trang menu
+
+GET http://localhost:3000/menu
+
+### Ví dụ khi lấy các món ăn theo giá giảm dần
+
+GET http://localhost:3000/menu?sortKey=price&sortValue=desc
+
+### Tìm kiếm món ăn
+
+GET http://localhost:3000/menu?keyword=banhbao
+
+### Get dishes by category
+
+GET http://localhost:3000/menu/main-course?keyword=pizza
+
+### Get a dish information by slug
+
+GET http://localhost:3000/menu/detail/banhbao

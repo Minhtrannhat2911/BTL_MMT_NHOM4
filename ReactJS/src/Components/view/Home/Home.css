@@ -1,0 +1,306 @@
+/* General container layout */
+.upload-history-container {
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    color: #333;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px;
+    height: 100px; /* Full height */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 10px 10px 20px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; /* Remove margin */
+}
+
+.sidebar-btn {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+.sidebar-btn:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+
+.sidebar-btn:hover {
+    background-color: #24baf5;
+    color: #ffffff;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+.icon1{
+    margin-bottom:-2px;
+}
+
+.icon2{
+    margin-bottom:-2px;
+}
+.folder-icon{
+    color:#007bff
+}
+h2 {
+    color: #000000ad;
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-right: 0; /* Reset margin */
+}
+
+hr.border1 {
+    border: 0;
+    height: 1.5px;
+    background: #ccc;
+    margin-bottom: 20px;
+    width: 95%; /* Điều chỉnh độ dài của đường gạch ngang */
+    margin: 0 auto 20px; /* Căn giữa đường gạch ngang */
+    
+}
+/* Table styling */
+.table-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 20px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Upload styling */
+.file-uploading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the end (right) */
+    padding: 10px;
+    height:50px;
+    
+}
+.file-uploading1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the end (right) */
+    padding: 10px;
+    
+}
+
+.file-btn{
+    padding: 15px 40px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #24baf5;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 800px;
+}
+
+.file-btn1 {
+    padding: 15px 40px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #24baf5;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 26px; /* Lùi phần tử qua phải */
+
+}
+
+.file-upload-info{
+    margin-left: 20%;
+    position: absolute;
+    top: 129px;
+
+}
+
+.file-upload-info1{
+    position: absolute;
+    top: 150px;
+    margin-right: 26px; /* Lùi phần tử qua phải */
+}
+
+.file-upload-info h6 {
+    flex: 1;
+    display: flex;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+.file-upload-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Distribute items evenly with space between */
+    margin-bottom: 10px; /* Add some space below the container */
+}
+
+.folder-icon {
+    margin-left: 31px;
+    margin-right: 10px; /* Add some space between the icon and the text */
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.file-upload {
+    font-size: 18px; /* Adjust the size as needed */
+    font-weight: bold; /* This makes the text bold */
+    color:#000000;
+    position: absolute;
+    left:335px;
+}
+
+.file-table {
+    width: 95%; /* Giảm độ rộng của bảng để nhỏ lại */
+    margin: 0 auto 70px;
+    border-collapse: collapse;
+    margin-bottom: 70px;
+    border-radius: 8px 8px 0 0; /* Chỉ bo góc trên cùng của bảng */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    outline: 1px solid #ccc; /* Add an outline border to the table */
+}
+
+.table-header {
+    background-color: #0d2c50;
+    color: #fff;
+    font-weight: 600;
+}
+
+.file-table th, .file-table td {
+    padding: 15px;
+    text-align: left;
+    border: none; /* Remove internal cell borders */
+}
+
+
+.file-table td {
+    border-block-start: 1px solid #ccc; /* Add border to table body cells */
+}
+
+.file-table th:first-child {
+    border-top-left-radius: 8px; /* Apply border-radius to the first th element */
+}
+
+.file-table th:last-child {
+    border-top-right-radius: 8px; /* Apply border-radius to the last th element */
+}
+
+.file-table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.file-name {
+    width: 40%;
+    font-weight: normal; 
+    font-size: 14px;
+}
+
+.file-size {
+    width: 20%;
+    font-weight: normal; 
+    font-size: 14px;
+}
+
+.file-date {
+    width: 20%;
+    font-weight: normal; 
+    font-size: 14px;
+}
+
+.action {
+    width: 0%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Adjust this as needed */
+}
+
+.file-name {
+    margin-left: 0; /* Reset margin */
+    font-size: 14px;
+}
+
+.file-size {
+    margin-left: 795px; /* Move File Size to the right */
+    font-size: 14px;
+}
+.file-date{
+    font-size: 14px;
+}
+.action {
+    margin-right: 40px; /* Adjust as needed */
+}
+
+.download-icon {
+    color: #4a90e2;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+}.download-icon:active {
+    transform: scale(0.95); /* Adds a press effect when clicked */
+
+
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    left: 200px;
+    position: absolute;
+    right: 0px;
+}
+
+.pagination-controls button {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-controls span {
+    margin: 0 10px;
+}
+
+
+
+.delete-icon {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.delete-icon:active {
+    transform: scale(0.95); /* Hiệu ứng nhấn khi click */
+}

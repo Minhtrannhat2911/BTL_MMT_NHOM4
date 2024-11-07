@@ -1,0 +1,17 @@
+### Trang giỏ hàng
+
+# Trước tiên phải đăng nhập để xét Bearer Token
+
+GET http://localhost:3000/cart
+
+### Thêm món ăn vào giỏ hàng
+
+GET http://localhost:3000/cart/add
+
+Content-Type: application/json
+
+{
+    "dishId" : "671417aa1dbabd18e467b2dd",
+    "quantity" : 1
+
+}

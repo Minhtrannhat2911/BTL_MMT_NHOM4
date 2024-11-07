@@ -1,0 +1,19 @@
+ ăn vào giỏ hàng
+
+GET http://localhost:3000/cart/add
+
+Content-Type: application/json
+
+{
+    "dishId" : "671417aa1dbabd18e467b2dd",
+    "quantity" : 1
+
+}### Trang menu
+
+GET http://localhost:3000/menu
+
+### Ví dụ khi lấy các món ăn theo giá giảm dần
+
+GET http://localhost:3000/menu?sortKey=price&sortValue=desc
+
+### T
