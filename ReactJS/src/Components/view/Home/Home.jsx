@@ -234,11 +234,11 @@ const Home = () => {
 
     /*Clear file input*/
     const clearFileInput = () => {
-        setSelectedFile(null);
+        setSelectedFile([]);
         setUploadStatus("select");
     };
     const clearFilesInput = () => {
-        setSelectedFiles(null);
+        setSelectedFiles([]);
         setUploadStatuss("select");
     };
     return (
@@ -275,12 +275,12 @@ const Home = () => {
                                             multiple
                                             style={{display: 'none'}}
                                         />
-                                        {!selectedfiles && (
+                                        {selectedfiles.length === 0  && (
                                             <button className="file-btn" onClick={onChooseFiles}>
                                                 Upload Folder
                                             </button>
                                         )}
-                                        {selectedfiles && (
+                                        {selectedfiles.length > 0 && (
                                             <>
                                                 <div className="file-upload-info">
                                                     <div style={{flex:1}}>
@@ -301,12 +301,12 @@ const Home = () => {
                                             onChange={handleFileChange}
                                             style={{display: 'none'}}
                                         />
-                                        {!selectedfile && (
+                                        {selectedfile.length === 0 && (
                                             <button className="file-btn1" onClick={onChooseFile}>
                                                 Upload File
                                             </button>
                                         )}
-                                        {selectedfile && (
+                                        {selectedfile.length > 0 && (
                                             <>
                                                 <div className="file-upload-info1">
                                                     <div style={{flex:1}}>
